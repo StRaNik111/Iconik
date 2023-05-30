@@ -76,8 +76,7 @@
 			position: absolute;
 			left: calc(50% + 20px);
 			top: 0;
-			width: 100%;
-			max-width: 950px;
+			width: 50%;
 			height: 100%;
 			#map{
 				height: 100%;
@@ -99,11 +98,14 @@
 		&__top{
 			padding: 120px 0;
 		}
-		&__map{
-
-		}
 		&__body{
 			padding-right: 60px;
+		}
+	}
+	@media (min-width:1920px){
+		&__map{
+			max-width: 950px;
+			width: 100%;
 		}
 	}
 }
@@ -235,4 +237,5 @@
 		}
 	}
 }
+
 
