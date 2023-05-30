@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Iconik'
+  })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="page">
+        <div id="home" class="fullscreen">
+          <img src="./images/fullscreen.jpg" alt="Full Screen Background" class="fullscreen__bg">
+          <div class="fullscreen__body container">
+            <h1 class="fullscreen__title">LIFE IS SHORT,
+              TREAT YOURSELF</h1>
+              <div class="fullscreen__play play">
+                <button class="play__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24" fill="none">
+                    <path d="M18.5 12L1.25 21.9593L1.25 2.04071L18.5 12Z" stroke="#1B1B1B" stroke-width="1.5"/>
+                  </svg>
+                </button>
+                <p class="play__text">Discover for a 30 seconds</p>
+              </div>
+          </div>
+          <button class="fullscreen__sound">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="30" viewBox="0 0 39 30" fill="none">
+              <path d="M28.4219 22.0919C30.3924 20.2729 31.605 17.7719 31.605 15.0434C31.605 12.315 30.3924 9.81396 28.4219 8.0708" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M33.2734 25.2751C36.1534 22.6982 37.745 18.9845 37.745 15.1193C37.745 11.254 36.0776 7.54033 33.2734 4.8877" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.8664 8.82857L22.2811 1.24962C22.5085 1.09804 22.6601 1.17383 22.7359 1.24962C22.8117 1.32541 22.9632 1.4012 22.9632 1.62857V28.5338C22.9632 28.7612 22.8117 28.9128 22.7359 28.9128C22.6601 28.9886 22.5085 29.0644 22.2811 28.9128L8.8664 21.4096M1.74219 19.5907V10.5717C1.74219 9.58647 2.57587 8.75278 3.56113 8.75278H8.94219V21.4096H3.48535C2.50008 21.4096 1.74219 20.6517 1.74219 19.5907Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.9297 9.73815L19.5528 7.38867" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </button>
+        </div>  
+        <section id="services" class="section services">
+          <div class="services__container container">
+            <h1 class="title">
+              popular services
+            </h1>
+            <select name="services" class="services__select" >
+              <option value="1" selected>ALL SERVICES</option>
+              <option value="2">Пункт №2</option>
+              <option value="3">Пункт №3</option>
+              <option value="4">Пункт №4</option>
+            </select>
+            <div class="services__tabs">
+              <button class="services__tab active">All services</button>
+              <button class="services__tab">DINE</button>
+              <button class="services__tab">RIDE</button>
+              <button class="services__tab">DISCOVER</button>
+              <button class="services__tab">RELAX</button>
+              <button class="services__tab">EXPERIENCE</button>
+            </div>
+          </div>
+          <div class="services__slider services-slider swiper">
+              <div class="swiper-wrapper">
+                <div class="services-slider__item swiper-slide">
+                <div class="swiper-slide__img">
+                  <img src="./images/services-slider-01.jpg" alt="Slider Image">
+                  <button class="swiper-slide__btn btn">Find out more</button>
+                </div>
+                  <div class="swiper-slide__body">
+                    <h6 class="swiper-slide__title">RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS</h6>
+                    <div class="swiper-slide__info">
+                      <span class="swiper-slide__price">USD 2,000.00</span>
+                      <span class="swiper-slide__price swiper-slide__price--old">USD 4,000.00</span>
+                      <div class="swiper-slide__time">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none">
+                          <path d="M5.00004 1.36279C7.43288 1.36279 9.42861 3.35908 9.42861 5.79136C9.42861 8.22365 7.43232 10.2199 5.00004 10.2199C2.56776 10.2199 0.571472 8.2242 0.571472 5.79136C0.571472 3.35852 2.50524 1.36279 5.00004 1.36279Z" stroke="#8B32FE" stroke-width="1.07143" stroke-miterlimit="10"/>
+                          <path d="M5.00006 3.4834V5.85371L7.05832 7.4129" stroke="#8B32FE" stroke-width="1.07143" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>1 h</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="services-slider__item swiper-slide">
+                <div class="swiper-slide__img">
+                  <img src="./images/services-slider-02.jpg" alt="Slider Image">
+                  <button class="swiper-slide__btn btn">Find out more</button>
+      
+                </div>
+                  <div class="swiper-slide__body">
+                    <h6 class="swiper-slide__title">BRUNCH WITH POOL ACCESS AT ROOFTOP, THE BURJ CLUB</h6>
+                    <div class="swiper-slide__info">
+                      <span class="swiper-slide__price">USD 2,000.00</span>
+                      <span class="swiper-slide__price swiper-slide__price--old">USD 4,000.00</span>
+                      <div class="swiper-slide__time">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none">
+                          <path d="M5.00004 1.36279C7.43288 1.36279 9.42861 3.35908 9.42861 5.79136C9.42861 8.22365 7.43232 10.2199 5.00004 10.2199C2.56776 10.2199 0.571472 8.2242 0.571472 5.79136C0.571472 3.35852 2.50524 1.36279 5.00004 1.36279Z" stroke="#8B32FE" stroke-width="1.07143" stroke-miterlimit="10"/>
+                          <path d="M5.00006 3.4834V5.85371L7.05832 7.4129" stroke="#8B32FE" stroke-width="1.07143" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>1 h</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="services-slider__item swiper-slide">
+                <div class="swiper-slide__img">
+                  <img src="./images/services-slider-03.jpg" alt="Slider Image">
+                  <button class="swiper-slide__btn btn">Find out more</button>
+      
+                </div>
+                  <div class="swiper-slide__body">
+                    <h6 class="swiper-slide__title">LIVE THE BILLIONAIRE LIFE FOR A DAY IN DUBAI</h6>
+                    <div class="swiper-slide__info">
+                      <span class="swiper-slide__price">USD 2,000.00</span>
+                      <span class="swiper-slide__price swiper-slide__price--old">USD 4,000.00</span>
+                      <div class="swiper-slide__time">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none">
+                          <path d="M5.00004 1.36279C7.43288 1.36279 9.42861 3.35908 9.42861 5.79136C9.42861 8.22365 7.43232 10.2199 5.00004 10.2199C2.56776 10.2199 0.571472 8.2242 0.571472 5.79136C0.571472 3.35852 2.50524 1.36279 5.00004 1.36279Z" stroke="#8B32FE" stroke-width="1.07143" stroke-miterlimit="10"/>
+                          <path d="M5.00006 3.4834V5.85371L7.05832 7.4129" stroke="#8B32FE" stroke-width="1.07143" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>1 h</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="services-slider__item swiper-slide">
+                <div class="swiper-slide__img">
+                  <img src="./images/services-slider-04.jpg" alt="Slider Image">
+                  <button class="swiper-slide__btn btn">Find out more</button>
+      
+                </div>
+                  <div class="swiper-slide__body">
+                    <h6 class="swiper-slide__title">FRIDAY BRUNCH AT FRANGIPANI ON ZAYA NURAI ISLAND, ABU DHABI</h6>
+                    <div class="swiper-slide__info">
+                      <span class="swiper-slide__price">USD 2,000.00</span>
+                      <span class="swiper-slide__price swiper-slide__price--old">USD 4,000.00</span>
+                      <div class="swiper-slide__time">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none">
+                          <path d="M5.00004 1.36279C7.43288 1.36279 9.42861 3.35908 9.42861 5.79136C9.42861 8.22365 7.43232 10.2199 5.00004 10.2199C2.56776 10.2199 0.571472 8.2242 0.571472 5.79136C0.571472 3.35852 2.50524 1.36279 5.00004 1.36279Z" stroke="#8B32FE" stroke-width="1.07143" stroke-miterlimit="10"/>
+                          <path d="M5.00006 3.4834V5.85371L7.05832 7.4129" stroke="#8B32FE" stroke-width="1.07143" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>1 h</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="services-slider__item swiper-slide">
+                <div class="swiper-slide__img">
+                  <img src="./images/services-slider-05.jpg" alt="Slider Image">
+                  <button class="swiper-slide__btn btn">Find out more</button>
+      
+                </div>
+                  <div class="swiper-slide__body">
+                    <h6 class="swiper-slide__title">Flyboard in Dubai marina</h6>
+                    <div class="swiper-slide__info">
+                      <span class="swiper-slide__price">USD 2,000.00</span>
+                      <span class="swiper-slide__price swiper-slide__price--old">USD 4,000.00</span>
+                      <div class="swiper-slide__time">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none">
+                          <path d="M5.00004 1.36279C7.43288 1.36279 9.42861 3.35908 9.42861 5.79136C9.42861 8.22365 7.43232 10.2199 5.00004 10.2199C2.56776 10.2199 0.571472 8.2242 0.571472 5.79136C0.571472 3.35852 2.50524 1.36279 5.00004 1.36279Z" stroke="#8B32FE" stroke-width="1.07143" stroke-miterlimit="10"/>
+                          <path d="M5.00006 3.4834V5.85371L7.05832 7.4129" stroke="#8B32FE" stroke-width="1.07143" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>1 h</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>             
+              <div class="prev-arrow swiper-button-prev">
+                <svg width="37" height="28" viewBox="0 0 37 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.6507 1.01316C18.6507 1.01316 18.9115 13.879 35.9971 14.6831L0 14.6831" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M19.2014 26.9868C19.2014 26.9868 19.454 15.4069 36 14.6831" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                </svg>
+              </div>
+              <div class="next-arrow swiper-button-next">
+                <svg width="37" height="28" viewBox="0 0 37 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.6507 1.01316C18.6507 1.01316 18.9115 13.879 35.9971 14.6831L0 14.6831" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M19.2014 26.9868C19.2014 26.9868 19.454 15.4069 36 14.6831" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                </svg>
+              </div>
+      
+          </div>
+        </section>
+        <section id="about" class="section cooperation">
+          <div class="cooperation__container container">
+            <h1 class="title">How to become a part of iconik?</h1>
+            <div class="cooperation__slider cooperation-slider swiper">
+              <div class="swiper-wrapper">
+                <div class="cooperation-slider__slide swiper-slide">
+                  <div class="cooperation-slider__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="122" height="86" viewBox="0 0 122 86" fill="none">
+                      <path d="M18.7261 40.536V9.97705H91.7079" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M99.7971 9.97705H103.212V61.5677H18.7261V48.4453" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M35.8065 72.5328C47.4908 72.5328 97.6434 72.5328 120.473 72.5328C119.754 79.3636 114.001 84.9361 106.811 84.9361H15.1343C7.94396 84.9361 2.19169 79.5434 1.47266 72.5328C1.83217 72.5328 17.8307 72.5328 17.4711 72.5328M10.4606 72.5328V5.84245C10.4606 3.50559 12.4379 1.70801 14.595 1.70801H107.171C109.507 1.70801 111.305 3.68535 111.305 5.84245V72.5328" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M94.9533 27.7729H61.1587V36.0418H94.9533V27.7729Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M61.1587 20.4028H82.9094" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M94.9533 42.873H61.1587V51.1419H94.9533V42.873Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M36.7068 25.6841L46.953 38.447L42.6388 38.2672C42.2793 38.2672 41.9198 38.6267 41.9198 38.9862V39.166L43.7174 45.817L40.6615 46.7158L38.8639 40.0647C38.8639 39.7052 38.5044 39.5255 38.1449 39.5255H37.9651L34.1902 41.8623L36.7068 25.6841Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </div>
+                  <h6 class="cooperation-slider__title">1. You leave a request
+                    online</h6>
+                  <p class="cooperation-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="cooperation-slider__slide swiper-slide">
+                  <div class="cooperation-slider__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="95" height="101" viewBox="0 0 95 101" fill="none">
+                      <path d="M63.7301 17.4811C63.7301 8.44015 56.3892 1.02197 47.271 1.02197C38.1528 1.02197 30.8892 8.44015 30.8892 17.4811C30.8892 26.522 38.2301 33.9401 47.3482 33.9401C56.4664 33.9401 63.7301 26.522 63.7301 17.4811Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M1.37122 45.3766C1.37122 42.6721 3.61213 40.4312 6.31667 40.4312H32.5894C35.2939 40.4312 37.5348 42.6721 37.5348 45.3766M21.7712 75.0493L19.3758 83.0084L16.9803 75.0493H21.7712ZM21.7712 75.0493H23.703C27.7985 75.5902 30.8894 78.9902 30.8894 83.163V91.3539H7.86213V83.163C7.86213 78.9902 10.953 75.5902 14.9712 75.0493M1.37122 91.3539V48.6993H37.5348V91.4311M37.4576 94.6766C37.4576 97.3811 35.2167 99.6221 32.5121 99.6221H6.2394C3.53485 99.6221 1.29395 97.3811 1.29395 94.6766M19.3758 71.6493C15.7439 71.6493 12.8076 68.713 12.8076 65.0811C12.8076 61.4493 15.7439 58.513 19.3758 58.513C23.0076 58.513 25.9439 61.4493 25.9439 65.0811C25.9439 68.713 23.0076 71.6493 19.3758 71.6493Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M57.1572 45.3766C57.1572 42.6721 59.3981 40.4312 62.1027 40.4312H88.3754C91.0799 40.4312 93.3209 42.6721 93.3209 45.3766M57.1572 91.3539V48.6993H93.3209V91.4311M93.3209 94.6766C93.3209 97.3811 91.0799 99.6221 88.3754 99.6221H62.1027C59.3981 99.6221 57.1572 97.3811 57.1572 94.6766M75.239 71.6493C71.6072 71.6493 68.6709 68.713 68.6709 65.0811C68.6709 61.4493 71.6072 58.513 75.239 58.513C78.8709 58.513 81.8072 61.4493 81.8072 65.0811C81.8072 68.713 78.8709 71.6493 75.239 71.6493ZM78.4845 74.9721C83.0436 74.9721 86.6754 78.6811 86.6754 83.163V91.3539H63.7254V83.163C63.7254 78.6039 67.4345 74.9721 71.9163 74.9721H78.4845Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M75.2441 81.54V78.2173" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M75.2441 88.1084V84.7856" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.93408 30.6172C9.71135 30.6172 11.2568 32.0854 11.2568 33.9399" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.93408 24.0493C13.3432 24.0493 17.825 28.4539 17.825 33.9402" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.93408 17.4814C16.975 17.4814 24.3932 24.8224 24.3932 33.9405" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M83.4326 33.9399C83.4326 32.1626 84.9008 30.6172 86.7553 30.6172" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M76.8613 33.9402C76.8613 28.5311 81.2659 24.0493 86.7522 24.0493" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M70.2986 33.9405C70.2986 24.8224 77.6395 17.4814 86.7577 17.4814" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M15.0442 75.0488H17.0533" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M47.3439 33.94C44.3303 27.4491 37.8393 17.4809 47.3439 1.09912" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M47.4203 33.94C50.3567 27.4491 56.8476 17.4809 47.343 1.09912" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M60.2428 7.43555C54.3701 10.2174 46.1019 13.1537 34.2019 7.59009" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M60.2428 27.5269C54.3701 24.745 46.1019 21.8087 34.2019 27.3723" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M31.5825 17.4038H63.6507" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </div>
+                  <h6 class="cooperation-slider__title">2. Consultation with the manager</h6>
+                  <p class="cooperation-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="cooperation-slider__slide swiper-slide">
+                  <div class="cooperation-slider__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="109" height="103" viewBox="0 0 109 103" fill="none">
+                      <path d="M35.204 51.593L38.1969 52.5611C40.2217 53.2653 42.5105 53.1776 44.4476 52.2086L45.5044 51.6807C47.0013 50.9765 48.7612 50.8002 50.3468 51.4167C50.3468 51.4167 71.3809 58.7213 71.3877 58.7232C71.6526 58.8148 70.3592 61.4259 70.2365 61.6694C68.9392 64.2425 66.8355 65.009 64.0627 64.2357C60.9607 63.3708 57.9113 62.1612 54.8366 61.1863C54.5727 61.0986 54.3087 61.0986 54.1325 61.2739C53.9562 61.3616 53.7799 61.6265 53.6922 61.8018C53.6922 61.8895 52.3716 66.7319 48.058 69.0206C45.3291 70.5176 41.9836 70.5176 38.1102 69.1969M38.8904 85.674C37.2454 86.4969 35.2478 85.7918 34.4249 84.1459C33.6019 82.5009 34.307 80.5033 35.953 79.6804L46.2942 74.6276M49.5316 87.9072L38.7862 93.1031C37.1412 93.9261 35.1436 93.221 34.3207 91.575C33.4977 89.9291 34.2028 87.8147 35.8488 87.1095L38.5514 85.8171L57.9405 76.2989M51.8067 94.3702L46.0391 97.1547C45.2161 97.5073 44.2762 97.6251 43.4542 97.2726C42.6313 97.0378 41.9261 96.3327 41.5736 95.5097C41.221 94.6868 41.1031 93.7469 41.4557 92.9249C41.8083 92.1019 42.3956 91.3968 43.2185 91.0442L47.4493 88.9289L61.473 82.012M89.5214 77.2114L83.8872 82.0538C80.3654 85.3107 76.718 89.1675 72.4045 91.2809L52.1563 101.229C51.5398 101.493 50.5718 101.141 49.9562 100.877C48.0444 100.058 47.4522 96.3736 49.6416 95.4357L59.1687 90.7832M89.5214 77.2114L77.6365 52.9137L86.6161 48.5115L98.5011 72.8092L89.5214 77.2114ZM26.4883 77.1228L17.0684 73.866L25.8718 48.2476L34.9391 51.4167L35.0268 51.5044L35.203 51.5921L26.4883 77.1228Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M77.633 52.9141L65.748 54.3224" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M34.0616 82.0531L26.4902 77.123" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="6.59429" cy="36.1685" r="4.86968" stroke="#8B32FE" stroke-width="1.5"/>
+                      <circle cx="99.9179" cy="33.8818" r="8.24802" stroke="#8B32FE" stroke-width="1.5"/>
+                      <circle cx="87.7918" cy="3.22538" r="1.90311" stroke="#8B32FE" stroke-width="1.5"/>
+                      <circle cx="57.7824" cy="24.112" r="13.6047" stroke="#8B32FE" stroke-width="1.5"/>
+                      <path d="M55.481 28.1135C56.2301 29.1622 56.8294 29.9863 57.279 30.6606C57.3538 30.8854 57.5786 30.9603 57.8034 30.9603C58.0282 30.9603 58.178 30.8854 58.3279 30.7355L60.1258 28.1883C60.95 26.8399 61.5492 26.0156 61.8489 25.5661C62.2235 24.8918 62.5231 24.3674 62.673 23.9179C62.8228 23.4684 62.8978 23.019 62.8978 22.4196C62.8978 21.5206 62.673 20.6216 62.2235 19.8724C61.774 19.0483 61.0997 18.449 60.3505 17.9995C59.6014 17.55 58.7023 17.3252 57.8034 17.3252C56.9044 17.3252 56.0054 17.55 55.2562 17.9995C54.4321 18.449 53.8328 19.1232 53.3832 19.8724C52.9337 20.6216 52.709 21.5206 52.709 22.4196C52.709 22.9441 52.709 23.4684 52.8588 23.9179C53.0087 24.3674 53.3083 24.8918 53.7578 25.4912C53.9826 25.9408 54.5819 26.8399 55.481 28.1135Z" stroke="#8B32FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M57.8153 23.5622C58.5773 23.5622 59.195 22.9445 59.195 22.1825C59.195 21.4205 58.5773 20.8027 57.8153 20.8027C57.0533 20.8027 56.4355 21.4205 56.4355 22.1825C56.4355 22.9445 57.0533 23.5622 57.8153 23.5622Z" fill="#8B32FE"/>
+                      <path d="M25.5161 3.81738C29.7964 3.81738 33.3076 7.32959 33.3076 11.6089C33.3076 15.8881 29.7954 19.4004 25.5161 19.4004C21.2368 19.4004 17.7246 15.8891 17.7246 11.6089C17.7246 7.32861 21.1268 3.81738 25.5161 3.81738Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10"/>
+                      <path d="M25.5215 7.54883V11.7191L29.1427 14.4623" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M99.9242 29.9561L101.078 32.2941L103.658 32.669L101.791 34.4889L102.232 37.0586L99.9242 35.8453L97.6165 37.0586L98.0572 34.4889L96.1902 32.669L98.7704 32.2941L99.9242 29.9561Z" stroke="#8B32FE" stroke-width="1.5" stroke-linejoin="round"/>
+                      </svg>
+                  </div>
+                  <h6 class="cooperation-slider__title">3. Presentation or discussion of conditions remotely</h6>
+                  <p class="cooperation-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="cooperation-slider__slide swiper-slide">
+                  <div class="cooperation-slider__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 97 97" fill="none">
+                      <path d="M75.7604 48.564V19.0094L57.8197 1.22803H6.20789C3.80616 1.22803 1.72327 3.31098 1.72327 5.71275V89.3287C1.72327 92.6922 4.44556 95.4165 7.81092 95.4165H15.5689H71.2756C73.6792 95.4165 75.7604 93.3335 75.7604 90.9318V64.2694M74.7136 19.5992H62.308C59.5272 19.5992 57.3893 17.4595 57.3893 14.6805V2.27481" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M45.7775 19.1685H11.1785" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M39.8545 28.2993H11.1785" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M55.2324 37.5898H11.1785" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M28.827 46.4458H11.1785" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M46.5393 46.4458H35.9757" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M90.2713 49.5103C91.3501 48.15 92.6518 47.0148 91.9647 45.1178L94.6055 42.4769C96.2385 40.8438 96.8337 38.7449 95.1988 37.1101C94.3824 36.2936 93.4117 35.9977 92.3313 35.9995C91.2509 35.9995 90.3918 36.6283 89.5753 37.4448L86.9308 40.0892M90.2713 49.5103L57.6489 82.124C57.4895 82.2851 57.2911 82.4056 57.0714 82.471L47.6255 85.1705C46.6035 85.4698 46.5805 85.4485 46.8798 84.4248L49.5791 74.9787C49.6429 74.7557 49.7652 74.5537 49.9299 74.3908L83.4964 40.8242C84.4157 39.905 85.7741 39.6659 86.9308 40.0892M90.2713 49.5103L90.4998 49.7389C91.5731 50.8122 91.5731 52.479 90.4998 53.5541L83.9126 60.1412L90.2713 49.5103ZM86.9308 40.0892L92.016 45.0132M49.6695 74.7698L57.0697 82.471M68.0583 71.7162L60.3253 63.9937" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.57239 79.4595C9.57239 79.4595 10.9858 82.3501 14.1988 84.1355C17.4119 85.9209 22.5308 86.3868 28.7229 82.6725C33.9197 79.5551 36.7855 80.2317 38.6967 81.2945C40.6078 82.3572 41.451 84.0203 41.451 84.0203" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </div>
+                  <h6 class="cooperation-slider__title">4. We conclude 
+                    a contract</h6>
+                  <p class="cooperation-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="cooperation-slider__slide swiper-slide">
+                  <div class="cooperation-slider__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="102" height="95" viewBox="0 0 102 95" fill="none">
+                      <path d="M100.862 91.8803V36.9277L91.2738 28.4673" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M85.552 28.4673L78.4613 34.6716" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M88.2191 42.6488V18.1538" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M85.2321 35.7192L82.4926 38.0559V43.6962" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M94.2556 43.6157V37.9754L91.516 35.6387" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M81.4457 46.1943H100.945" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M85.0687 54.4131H81.3622H81.2816" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M85.0687 61.8257H81.3622H81.2816" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M85.0687 69.1582H81.3622H81.2816" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M85.0687 76.5713H81.3622H81.2816" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M85.0687 83.9038H81.3622H81.2816" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M95.4593 54.4131H91.7528H91.6722" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M95.6229 61.8257H91.9164H91.5941" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M95.4593 69.1582H91.7528H91.6722" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M95.4593 76.5713H91.7528H91.6722" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M95.4593 83.9038H91.7528H91.6722" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M73.1411 91.8808C73.2217 91.3974 79.3454 40.957 68.5483 19.9268H59.5238V92.1226" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M59.0475 25.1641L52.3597 30.2403V92.3642" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M65.4066 43.4546H67.5016V45.7107H65.4066V43.4546Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M65.4066 51.1094H67.5016V53.3655H65.4066V51.1094Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M65.4066 58.9253H67.5016V61.1814H65.4066V58.9253Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M65.4066 66.5796H67.5016V68.8357H65.4066V66.5796Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M65.4066 74.2344H67.5016V76.4905H65.4066V74.2344Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M65.4066 81.9697H67.5016V84.2258H65.4066V81.9697Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M39.144 35.3165C42.5282 21.538 43.4145 8.4042 43.5757 5.1006L29.7972 0.749512" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M43.5757 92.2835C35.5987 54.01 29.8778 1.23297 29.7972 0.749512" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21.0128 68.1914L15.2113 93.8951" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M27.6196 1.23291L21.5764 4.05306C20.9318 9.45163 16.4196 51.0287 31.9707 92.2029" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M20.9301 14.6087L30.9214 12.0303" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M20.4456 27.9036L32.9348 25.5669" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21.0863 41.5208L34.623 39.1841" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M22.8673 56.8304L36.8069 54.3325" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M25.4457 70.6087L39.063 68.1108" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M28.6644 82.6951L41.2342 80.2778" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M32.0551 92.3638H88.458" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.55288 45.3882C6.26367 45.3882 5.13561 46.1939 4.24928 47.0803C3.36295 46.1939 2.15431 45.3882 0.945679 45.3882" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M15.287 49.8203C14.0784 49.8203 12.8697 50.6261 11.9834 51.5124C11.0971 50.6261 9.88844 49.8203 8.67981 49.8203" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M80.2321 11.5465L77.6537 15.4141H76.3645L77.0091 11.627M76.8479 6.22847L76.1227 2.36084H77.4119L80.2321 6.22847M69.8378 4.21408C70.1601 4.21408 70.4824 4.37523 70.6436 4.61696L72.3357 6.87308C72.8191 7.51768 73.6249 7.92056 74.4306 7.92056H76.2033L83.5357 8.00114C83.858 8.00114 84.2609 8.16229 84.422 8.48459C84.5832 8.80689 84.5832 9.20977 84.422 9.4515C84.2609 9.7738 83.9386 9.93495 83.5357 9.93495H76.445C76.3645 9.93495 76.2033 9.93495 76.1227 9.93495H72.0134C71.7717 9.93495 71.6105 9.85438 71.4494 9.7738C71.2882 9.69323 71.127 9.4515 71.127 9.29035L69.2738 4.21408H69.8378Z" stroke="#8B32FE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </div>
+                  <h6 class="cooperation-slider__title">5. You enjoy all the benefits of membership</h6>
+                  <p class="cooperation-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+              </div>
+              <div class="cooperation-slider__navigation">
+                
+                <div class="prev-arrow swiper-button-prev">
+                  <svg width="37" height="28" viewBox="0 0 37 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6507 1.01316C18.6507 1.01316 18.9115 13.879 35.9971 14.6831L0 14.6831" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                    <path d="M19.2014 26.9868C19.2014 26.9868 19.454 15.4069 36 14.6831" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                  </svg>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="next-arrow swiper-button-next">
+                  <svg width="37" height="28" viewBox="0 0 37 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6507 1.01316C18.6507 1.01316 18.9115 13.879 35.9971 14.6831L0 14.6831" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                    <path d="M19.2014 26.9868C19.2014 26.9868 19.454 15.4069 36 14.6831" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                  </svg>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <section  class="section plans">
+            <img src="./images/plans-bg.jpg" alt="Plans Background" class="plans__bg">
+          <div class="plans__container container--big">
+            <h1 class="title">iconik membership plans</h1>
+            <div class="plans__items">
+              <div class="plans__item plan-item ">
+                <div class="plan-item__img">
+                  <img src="./images/plan-header-img.jpg" alt="Header image">
+                </div>
+                <h2 class="plan-item__title">Basic</h2>
+                <ul class="plan-item__list">
+                  <li> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Access to iconiK Members Experience Portal 
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                     Access to iconiK Concierge services Complimentary 
+                    
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                     iKoins to spend on Dezerved platform (on a yearly basis) Complimentary iKoins to spend on iconiK
+                  </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Worldwide (on a yearly basis)
+                  </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Complimentary VIP meet & greet services </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Complimentary airport pick up and drop off </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Access to iconiK Lifestyle services</li>
+                </ul>
+                <button class="plan-item__btn btn">Get a consultation</button>
+              </div>
+              <div class="plans__item plan-item ">
+                <div class="plan-item__img">
+                  <img src="./images/plan-header-img.jpg" alt="Header image">
+                </div>
+                <h2 class="plan-item__title">standart</h2>
+                <ul class="plan-item__list">
+                  <li> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Access to iconiK Members Experience Portal 
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                     Access to iconiK Concierge services Complimentary 
+                    
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                     iKoins to spend on Dezerved platform (on a yearly basis) Complimentary iKoins to spend on iconiK
+                  </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Worldwide (on a yearly basis)
+                  </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Complimentary VIP meet & greet services </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Complimentary airport pick up and drop off </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Access to iconiK Lifestyle services</li>
+                </ul>
+                <button class="view-all">VIEW ALL FEATURES</button>
+                <button class="plan-item__btn btn">Get a consultation</button>
+              </div>
+              <div class="plans__item plan-item">
+                <div class="plan-item__img">
+                  <img src="./images/plan-header-img.jpg" alt="Header image">
+                </div>
+                <h2 class="plan-item__title">INDIVIDUAL</h2>
+                <ul class="plan-item__list">
+                  <li> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Access to iconiK Members Experience Portal 
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                     Access to iconiK Concierge services Complimentary 
+                    
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                     iKoins to spend on Dezerved platform (on a yearly basis) Complimentary iKoins to spend on iconiK
+                  </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Worldwide (on a yearly basis)
+                  </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Complimentary VIP meet & greet services </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Complimentary airport pick up and drop off </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Access to iconiK Lifestyle services</li>
+                </ul>
+                <button class="view-all">VIEW ALL FEATURES</button>
+                <button class="plan-item__btn btn">Get a consultation</button>
+              </div>
+              <div class="plans__item plan-item plan-item--white">
+                <div class="plan-item__img">
+                  <img src="./images/plan-header-img.jpg" alt="Header image">
+                </div>
+                <h2 class="plan-item__title">SUPER STAR</h2>
+                <ul class="plan-item__list">
+                  <li> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Access to iconiK Members Experience Portal 
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                     Access to iconiK Concierge services Complimentary 
+                    
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                     iKoins to spend on Dezerved platform (on a yearly basis) Complimentary iKoins to spend on iconiK
+                  </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Worldwide (on a yearly basis)
+                  </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Complimentary VIP meet & greet services </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Complimentary airport pick up and drop off </li>
+                  <li class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7523 2.70813C13.0826 3.03838 13.0826 3.57381 12.7523 3.90404L5.36441 11.292C5.20582 11.4506 4.99073 11.5397 4.76646 11.5397C4.54217 11.5397 4.32708 11.4506 4.1685 11.292L1.24769 8.37118C0.917437 8.04093 0.917437 7.5055 1.24769 7.17526C1.57793 6.84501 2.11336 6.84501 2.4436 7.17526L4.76646 9.49811L11.5565 2.70813C11.8867 2.37789 12.4221 2.37789 12.7523 2.70813Z" fill="#8B32FE"/>
+                      </svg>
+                    Access to iconiK Lifestyle services</li>
+                </ul>
+                <button class="view-all">VIEW ALL FEATURES</button>
+                <button class="plan-item__btn btn">Get a consultation</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="gallery" class="section lifestyle">
+          <h1 class="title">iconik lifestyle</h1>
+          <div class="lifestyle__container lifestyle__container--adaptive">
+            <div class="lifestyle__row">
+              <div class="lifestyle__col">
+                <div class="lifestyle__img">
+                  <img src="./images/gallery-01.jpg" alt="Gallery Image">
+                </div>
+                <div class="lifestyle__img">
+                  <img src="./images/gallery-05.jpg" alt="Gallery Image">
+                </div>
+                <div class="lifestyle__img">
+                  <img src="./images/gallery-06.jpg" alt="Gallery Image">
+                </div>
+                <div class="lifestyle__img">
+                  <img src="./images/gallery-04.jpg" alt="Gallery Image">
+                </div>
+              </div>
+              <div class="lifestyle__col">
+                <div class="lifestyle__img">
+                  <img src="./images/gallery-02.jpg" alt="Gallery Image">
+      
+                </div>
+                <div class="lifestyle__img">
+                  <img src="./images/gallery-07.jpg" alt="Gallery Image">
+      
+                </div>
+                <div class="lifestyle__img">
+                  <img src="./images/gallery-08.jpg" alt="Gallery Image">
+      
+                </div>
+                <div class="lifestyle__img">
+                  <img src="./images/gallery-03.jpg" alt="Gallery Image">
+      
+                </div>
+                <div class="lifestyle__img">
+                  <img src="./images/gallery-09.jpg" alt="Gallery Image">
+      
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lifestyle__container container--big">
+              <div class="lifestyle__row">
+                <div class="lifestyle__col">
+                  <div class="lifestyle__img">
+                    <img src="./images/gallery-01.jpg" alt="Gallery Image">
+                  </div>
+                  <div class="lifestyle__img">
+                    <img src="./images/gallery-05.jpg" alt="Gallery Image">
+                  </div>
+                  <div class="lifestyle__img">
+                    <img src="./images/gallery-06.jpg" alt="Gallery Image">
+                  </div>
+      
+                </div>
+                <div class="lifestyle__col lifestyle__col--big">
+                  <div class="lifestyle__img">
+                    <img src="./images/gallery-02.jpg" alt="Gallery Image">
+                  </div>
+                  <div class="lifestyle__img">
+                    <img src="./images/gallery-07.jpg" alt="Gallery Image">
+                  </div>
+                  <div class="lifestyle__img">
+                    <img src="./images/gallery-08.jpg" alt="Gallery Image">
+                  </div>
+                </div>
+              </div>
+              <div class="lifestyle__row">
+                <div class="lifestyle__col lifestyle__col--big">
+                  <div class="lifestyle__img">
+                    <img src="./images/gallery-03.jpg" alt="Gallery Image">
+                  </div>
+                  <div class="lifestyle__img">
+                    <img src="./images/gallery-09.jpg" alt="Gallery Image">
+                  </div>
+                </div>
+                <div class="lifestyle__col ">
+                  <div class="lifestyle__img">
+                    <img src="./images/gallery-04.jpg" alt="Gallery Image">
+                  </div>
+                  <div class="lifestyle__img">
+                    <img src="./images/gallery-10.jpg" alt="Gallery Image">
+                  </div>
+                  <div class="lifestyle__img">
+                    <img src="./images/gallery-11.jpg" alt="Gallery Image">
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <section class="events">
+          <h1 class="title">
+            Iconik latest 
+            events
+          </h1>
+          <div class="events__slider swiper">
+            <div class="events__wrapper swiper-wrapper">
+              <div class="events__slide events-slide swiper-slide">
+                <div class="events-slide__img">
+                  <img src="./images/events-01.jpg" alt="Events Image">
+                </div>
+                <button class="play">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                    <path d="M10.25 6.5L1.625 11.4796L1.625 1.52035L10.25 6.5Z" stroke="white" stroke-width="1.5"/>
+                    </svg>
+                </button>
+                <h6 class="events-slide__title">Dubai Marina Yacht Tour with <br> Barbecue Lunch - exclusive Yachts</h6>
+              </div>
+              <div class="events__slide events-slide swiper-slide">
+                <div class="events-slide__img">
+                  <img src="./images/events-02.jpg" alt="Events Image">
+                </div>
+                <button class="play">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                    <path d="M10.25 6.5L1.625 11.4796L1.625 1.52035L10.25 6.5Z" stroke="white" stroke-width="1.5"/>
+                    </svg>
+                </button>
+                <h6 class="events-slide__title">Dubai Marina Yacht Tour with <br> Barbecue Lunch - exclusive Yachts</h6>
+              </div>
+              <div class="events__slide events-slide swiper-slide">
+                <div class="events-slide__img">
+                  <img src="./images/events-01.jpg" alt="Events Image">
+                </div>
+                <button class="play">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                    <path d="M10.25 6.5L1.625 11.4796L1.625 1.52035L10.25 6.5Z" stroke="white" stroke-width="1.5"/>
+                    </svg>
+                </button>
+                <h6 class="events-slide__title">Dubai Marina Yacht Tour with <br> Barbecue Lunch - exclusive Yachts</h6>
+              </div>
+            </div>
+          </div>
+          <button class="events__btn btn">Choose a plan</button>
+        </section>
+        <section class="section team">
+          <div class="team__container container">
+            <h1 class="title">Iconik managers will provide you with the best experience</h1>
+            <div class="team__slider swiper">
+              <div class="team__wrapper swiper-wrapper">
+                <div class="team__slide team-slide swiper-slide">
+                  <div class="team-slide__img">
+                    <img src="./images/manager-01.jpg" alt="Manager Image">
+                  </div>
+                  <div class="team-slide__info">
+                    <h6 class="team-slide__name">Mahammed Naqvi</h6>
+                    <p class="team-slide__post">Iconik lifestyle manager</p>
+                  </div>
+                </div>
+                <div class="team__slide team-slide swiper-slide">
+                  <div class="team-slide__img">
+                    <img src="./images/manager-02.jpg" alt="Manager Image">
+                  </div>
+                  <div class="team-slide__info">
+                    <h6 class="team-slide__name">Aliya Mir</h6>
+                    <p class="team-slide__post">Iconik lifestyle manager</p>
+                  </div>
+                </div>
+                <div class="team__slide team-slide swiper-slide">
+                  <div class="team-slide__img">
+                    <img src="./images/manager-03.jpg" alt="Manager Image">
+                  </div>
+                  <div class="team-slide__info">
+                    <h6 class="team-slide__name">Unais el-Baccus</h6>
+                    <p class="team-slide__post">Iconik lifestyle manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="prev-arrow swiper-button-prev">
+                <svg width="37" height="28" viewBox="0 0 37 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.6507 1.01316C18.6507 1.01316 18.9115 13.879 35.9971 14.6831L0 14.6831" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M19.2014 26.9868C19.2014 26.9868 19.454 15.4069 36 14.6831" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                </svg>
+              </div>
+              <div class="next-arrow swiper-button-next">
+                <svg width="37" height="28" viewBox="0 0 37 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.6507 1.01316C18.6507 1.01316 18.9115 13.879 35.9971 14.6831L0 14.6831" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M19.2014 26.9868C19.2014 26.9868 19.454 15.4069 36 14.6831" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                </svg>
+              </div>
+            </div>
+            <form action="#" class="team__form team-form">
+              <h4 class="team-form__title">
+                Get a free consultation
+              </h4>
+              <div class="team-form__row">
+                <div class="team-form__field">
+                  <input class="team-form__inp" type="text" id="name" name="name" required placeholder="Fist name"></input>
+                  <svg class="team-form__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M15.2 15.673C15.2 11.285 12.4442 9.58971 8.00001 9.58971C3.55597 9.58971 0.800049 11.285 0.800049 15.673" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                    <path d="M5.26465 3.88942C5.26465 2.27385 6.60341 0.952019 8.23961 0.952019C9.87581 0.952019 11.1402 2.27385 11.2146 3.88942C11.2146 5.50498 9.87581 6.82684 8.23961 6.82684C6.60341 6.82684 5.26465 5.50498 5.26465 3.88942Z" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10"/>
+                  </svg>
+                  <label for="name" class="team-form__label">Fist name</label>
+                </div>
+                <div class="team-form__field">
+                  <input class="team-form__inp" type="number" id="phone" placeholder="Phone number" required></input>
+                  <svg class="team-form__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M12.1958 7.39964C12.2205 6.61332 11.8 5.72017 11.071 5.01037C10.3419 4.30275 9.42492 3.89364 8.61422 3.91751M15.2459 7.38857C15.3166 6.09575 14.4694 4.39285 13.0876 3.0504C11.6837 1.68621 9.97208 0.881457 8.6251 0.952122M3.05779 1.90003C2.92725 1.90003 2.80522 1.94871 2.7143 2.03711L1.20808 3.50151C0.933142 3.76882 0.716781 4.35496 0.754225 4.73122C0.757621 4.76242 1.13588 8.02183 4.62674 11.4167C7.97686 14.6734 11.3258 15.0381 11.3588 15.0413C11.7453 15.0774 12.1967 15.0453 12.6226 14.6001L14.1286 13.1357C14.318 12.9516 14.318 12.6516 14.1286 12.4673L11.6894 10.0872C11.5075 9.91056 11.1843 9.91056 11.0018 10.0872L10.5042 10.5711C10.028 11.0341 9.11494 11.3337 8.44043 11.236C8.31521 11.2182 7.5313 11.3751 6.02798 9.91358C4.52488 8.45321 4.78646 7.80635 4.76798 7.68481C4.66758 7.01741 4.96173 6.15476 5.45234 5.67828L5.94989 5.1947C6.04103 5.1063 6.09095 4.98765 6.09116 4.86074C6.09116 4.73382 6.04103 4.61493 5.94989 4.52655L3.40153 2.03758C3.31062 1.94871 3.18858 1.90003 3.05779 1.90003Z" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  
+                </div>
+                <div class="team-form__field">
+                  <input class="team-form__inp" type="email" name="email" id="email" required placeholder="Email adress"></input>
+                  <svg class="team-form__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M15.25 2.66689V13.4723H0.75V2.66689M0.75 2.52769H15.25V2.80609L8 8.66235L0.75 2.80609V2.52769Z" stroke="#1B1B1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <label for="email" class="team-form__label">Email adress</label>
+                </div>
+              </div>
+              <div class="team-form__bottom">
+                <button class="team-form__btn btn btn--black">Get a consultation</button>
+                <p class="team-form__rules">
+                  By clicking the button you are accepting to receive an email about club membership and a phone call to arrange a show-around.
+                </p>
+              </div>
+            </form>
+      
+          </div>
+        </section>
+        <section id="contacts" class="contacts">
+          <div class="contacts__container container">
+            <div class="contacts__body">
+              <h1 class="title">We are on  <br>
+                social media</h1>
+                <p class="contacts__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+                </p>
+                <div class="contacts__links">
+                  <a href="#" class="contacts__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                      <path d="M3.3252 0.836487H15.75V12.4338" stroke="white" stroke-width="1.5" stroke-linecap="square"/>
+                      <path d="M15.348 1.28552L1.54688 15" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg>
+                    INSTAGRAM
+                  </a>
+                  <a href="#" class="contacts__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                      <path d="M3.3252 0.836487H15.75V12.4338" stroke="white" stroke-width="1.5" stroke-linecap="square"/>
+                      <path d="M15.348 1.28552L1.54688 15" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg>
+                    FACEBOOK
+                  </a>
+                  <a href="#" class="contacts__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                      <path d="M3.3252 0.836487H15.75V12.4338" stroke="white" stroke-width="1.5" stroke-linecap="square"/>
+                      <path d="M15.348 1.28552L1.54688 15" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg>
+                    LENKEDIN
+                  </a>
+                </div>
+            </div>
+            <div class="contacts__card card-contacts">
+              <div class="card-contacts__top">
+                <div class="card-contacts__info">
+                  <div class="card-contacts__icon"></div>
+                    <div class="card-contacts__body">
+                      <div class="card-contacts__name">@iconik_event_atelier</div>
+                      <div class="card-contacts__description">Description here</div>
+                    </div>
+                </div>
+                <button class="card-contacts__btn btn btn--black">Follow</button>
+              <button class="plus"></button>
+      
+              </div>
+              <div class="card-contacts__gallery">
+                <div class="card-contacts__col">
+                  <div class="card-contacts__img">
+                    <img src="./images/contacts-01.jpg" alt="Contacts Image">
+                  </div>
+                  <div class="card-contacts__img">
+                    <img src="./images/contacts-02.jpg" alt="Contacts Image">
+                  </div>
+                  <div class="card-contacts__img">
+                    <img src="./images/contacts-03.jpg" alt="Contacts Image">
+                  </div>
+                </div>
+                <div class="card-contacts__col">
+                  <div class="card-contacts__img">
+                    <img src="./images/contacts-04.jpg" alt="Contacts Image">
+                  </div>
+                  <div class="card-contacts__img">
+                    <img src="./images/contacts-05.jpg" alt="Contacts Image">
+                  </div>
+                  <div class="card-contacts__img">
+                    <img src="./images/contacts-06.jpg" alt="Contacts Image">
+                  </div>
+                </div>
+              </div>
+              <button class="load-more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                  <path d="M0.3125 8.08398C0.3125 12.5022 3.8941 16.084 8.3125 16.084V14.084C4.9987 14.084 2.3125 11.3978 2.3125 8.08398C2.3125 6.42718 2.9841 4.92718 4.0699 3.84138L4.3125 3.59878V6.08398H6.3125V0.0839844H0.3125V2.08398H2.9989L2.6557 2.42718C1.2079 3.87478 0.3125 5.87478 0.3125 8.08398Z" fill="white"/>
+                  <path d="M16.3125 8.08398C16.3125 3.66578 12.7309 0.0839844 8.3125 0.0839844V2.08398C11.6263 2.08398 14.3125 4.77018 14.3125 8.08398C14.3125 9.74078 13.6409 11.2408 12.5551 12.3266L12.3125 12.5692V10.084H10.3125V16.084H16.3125V14.084H13.6261L13.9693 13.7408C15.4171 12.2932 16.3125 10.2932 16.3125 8.08398Z" fill="white"/>
+                </svg>
+                Load more
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/footer.html', {})
+    </div>
+    @@include('html/script.html', {})
+  </body>
+</html> 

@@ -1,0 +1,204 @@
+body {
+	font-family: $fontFamily;
+	background-color: $mainBgColor;
+	color: $mainTextColor;
+	&::-webkit-scrollbar {
+		width: 5px;
+		background-color: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 8px;
+		background-color: $purpleColor;
+
+	}
+
+	&._lock {
+		overflow: hidden;
+	}
+
+}
+
+
+
+// Оболочка ===================================================================
+.container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0px 15px;
+
+	&--big{
+		max-width: 1900px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	flex: 1 1 auto;
+	&.load {
+
+	}
+}
+.section{
+	padding: 60px 0;
+
+	@media (min-width:767.98px ){
+		padding: 90px 0;
+		  
+	}
+	@media (min-width:991.98px){
+		padding: 140px 0;
+		  
+	}
+	@media (min-width:1199.98px){
+		padding: 180px 0;
+		
+	}
+}
+
+.btn{
+	font-weight: 700;
+	border-radius: 2px;
+	background-color: $purpleColor;
+	color: $mainTextColor;
+	font-size: 13px;
+	padding: 10px 20px;
+	position: relative;
+	transition: all 0.3s ease 0s;
+	&--black{
+		background-color: $mainBgColor;
+		&:hover{
+			background-color: #4f4f4f !important;
+		}
+	}
+	&:hover{
+		background-color: #5b16b5;
+	}
+	@media (min-width:767.98px ){
+	font-size: 10px;
+		  
+	}
+	@media (min-width:991.98px){
+		font-size: 13px;
+		  
+	}
+	@media (min-width:1199.98px){
+		padding: 16px 26.5px;
+		  
+	}
+}
+
+.title{
+	font-size: 24px;
+	line-height: 34px;
+	text-transform: uppercase;
+	font-family: 'Al Veshion';
+	font-weight: 400;
+	margin-bottom: 20px;
+	text-align: center;
+	@media (min-width:767.98px ){
+		  font-size: 34px;
+		  line-height: 44px;
+		  margin-bottom: 40px;
+	}
+	@media (min-width:991.98px){
+		font-size: 42px;
+		line-height: 58px;
+		margin-bottom: 50px;
+
+	}
+	@media (min-width:1199.98px){
+		font-size: 48px;
+		line-height: 68px;
+		margin-bottom: 64px;
+		
+	}
+}
+
+.view-all{
+	margin-top: auto;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #615D6D;
+	width: 100%;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 20px 0;
+	padding: 20px 0 20px 55px;
+	text-align: left;
+	position: relative;
+	transition: all 0.3s ease 0s;
+	&::before,&::after{
+		content:'';
+		position: absolute;
+		z-index: 2;
+		width: 16px;
+		height: 1px;
+		background: #615D6D;
+		left: 30px;
+		top: calc(50% - 1px);
+		transition: all 0.3s ease 0s;
+	}
+	&::after{
+		transform: rotate(-90deg);
+	}
+	&:hover{
+		color: $purpleColor;
+		&::before,&::after{
+			background: $purpleColor;
+
+			
+		}
+		&::after{
+		transform: rotate(-0deg);
+
+		}
+	}
+	@media (min-width:767.98px ){
+		  display: none;
+	}
+}
+.load-more{
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 12px;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	column-gap: 9px;
+	transition: all 0.3s ease 0s;
+	svg{
+		width: 10px;
+		height: 10px;
+		path{
+			transition: all 0.3s ease 0s;
+		}
+	}
+	&:hover{
+		color: $purpleColor;
+		svg{
+			path{
+				fill: $purpleColor;
+			}
+		}
+	}
+	@media (min-width:767.98px ){
+		font-size: 13px;
+		line-height: 20px;
+	column-gap: 18px;
+
+		svg{
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
